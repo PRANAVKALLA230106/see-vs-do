@@ -1,0 +1,10 @@
+Jackfruit: predictions for the H3 collider patching run
+Written 2026-11-12 ~02:45 IST, after the chain exploration + confirmation patching runs and BEFORE the collider run produced results.
+Basis: chain patching on 30 valid scenarios (two sets) gave D ~ 0 (seeing-like) at every layer where the patch has an effect (0-15).
+
+Predictions (word patches, layers 0-33 every 3rd; collider rule "C if A or B"; probe on B)
+H3-P1. The C patch passes the fixed pass rule at early/middle layers (at least layers 0-12).
+H3-P2. At passing layers, median D for colliders lies in [-0.2, 0.2] (seeing-like: belief in B rises as when C is read).
+H3-P3. At passing layers, the explaining-away interaction under the patch is positive (95% CI above 0) and its median is
+       within a factor of 2 of the text interaction (the model explains away after a patched C as it does after a read C).
+H3-P4. Effects vanish by about layer 18-21, as for chains.

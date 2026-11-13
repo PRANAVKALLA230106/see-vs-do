@@ -1,0 +1,8 @@
+Jackfruit: predictions for DS and FORK on Llama-3.2-3B
+Written 2026-11-12 ~07:00 IST, BEFORE either run (and before the Qwen DS/FORK results were seen).
+
+DS-L1. Llama's own filters select 15-30 of the 45 chain scenarios (main Llama run: 11/20 + 12/25 = 23).
+DS-L2. The true patch passes at layers 0-9 and fails by layer 12-13; median D < 0.3 at passing layers.
+DS-L3. Do-source patch: same direction as the Qwen DS result (stated after Qwen DS is known only as "consistent / not consistent").
+FK-L1. At least 6 of 15 fork scenarios pass the filters on Llama; otherwise forks are "not testable on Llama".
+FK-L2. If testable: at passing layers, median D (cause) in [-0.2, 0.3].

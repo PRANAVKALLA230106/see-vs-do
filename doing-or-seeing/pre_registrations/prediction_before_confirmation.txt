@@ -1,0 +1,16 @@
+Jackfruit: predictions for the activation-patching CONFIRMATION run
+Written 2026-11-12 ~01:30 IST, after the exploration run and BEFORE the confirmation run was started.
+Source: results/P_exploration_settings.csv and results/P_exploration_D_summary.csv (15 valid exploration scenarios).
+
+Exploration result
+- Patching the key-word state (word or sentence mode) passes the fixed pass rule at layers 0, 3, 6, 9, 12, 15
+  (filler-corrected mediator shift 2.9-4.8, true beats unrelated in 100% of scenarios, filler |shift| < 0.1,
+  false patch negative). Layers 18 and later fail (the patch has little or no effect there).
+- Median D is ~0 (seeing-like) at layers 0-12: all medians within [-0.05, 0.01], 95% CIs within [-0.12, 0.05].
+- Layer 15: D = 0.27 (sentence) and 0.10 (word), CIs reaching ~0.5.
+
+Predictions for the 25 confirmation scenarios (same notebook, SET = "confirmation", variants 16-23)
+P1. Settings at layers 0-12 pass the pass rule in both modes.
+P2. Median D at every passing layer from 0 to 12 lies in [-0.1, 0.1] (seeing-like).
+P3. No passing setting has median D above 0.5 (no layer where patching behaves like the model's own "do").
+P4. The patch's effect on the mediator answer collapses (filler-corrected shift < 1.0) by layer 18 or 21.
