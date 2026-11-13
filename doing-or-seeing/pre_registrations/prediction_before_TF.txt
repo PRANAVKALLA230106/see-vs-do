@@ -1,7 +1,0 @@
-Jackfruit: predictions for the True/False answer-format robustness run, Qwen3-4B-Base
-Written 2026-11-12 ~05:30 IST, BEFORE the run. Same 30 scenarios and items as the DS run; layers 3, 6, 9, 12.
-
-TF-P1. In the True/False format the model still separates seeing from doing in text for most scenarios
-       (at least 20 of 30 pass the filters when recomputed in this format).
-TF-P2. The true patch passes the fixed rule at layers 3-12.
-TF-P3. At passing layers, median D of the true patch lies in [-0.2, 0.3] (seeing-like), as with Yes/No.

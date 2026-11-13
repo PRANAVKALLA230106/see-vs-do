@@ -1,8 +1,0 @@
-# analysis notebook (00) and figure scripts
-pandas
-numpy
-matplotlib
-# GPU experiment notebooks (01-17)
-torch
-transformers>=4.44
-huggingface_hub

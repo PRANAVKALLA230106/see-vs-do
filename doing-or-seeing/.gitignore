@@ -1,7 +1,0 @@
-__pycache__/
-.ipynb_checkpoints/
-*.pt
-*.aux
-*.log
-*.out
-.DS_Store
