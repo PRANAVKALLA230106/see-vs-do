@@ -1,0 +1,15 @@
+Jackfruit: predictions for the DS run (do-source patch + fine layer sweep), Qwen3-4B-Base
+Written 2026-11-12 ~05:00 IST, BEFORE the run. Same 30 scenarios as the main patching runs.
+
+DS-P1 (sanity). At layer 0 the do-source and true patches give nearly the same result (median |D(do) - D(true)| < 0.1).
+DS-P2 (fine sweep). The true patch passes the fixed rule at every layer from 0 to 15 and fails by layer 18;
+       its median D stays below 0.3 at every passing layer.
+DS-P3 (main question, genuinely uncertain; both outcomes are stated in advance):
+   (a) "intervention is carried by the word": at middle layers (9-15) the do-source patch still passes and its D is higher
+       than the true patch's (paired median difference > 0.2, 95% CI above 0) -> the network does represent "imposed from
+       outside" at the fact's position, and ordinary patching never carries it.
+   (b) "intervention lives elsewhere": the do-source patch passes but D(do) - D(true) has a CI that includes 0 and median < 0.2
+       -> the word's own state does not carry the intervention; the information about how the fact came about is held at
+       other positions (the agent clause), and the downstream reasoning treats any copied fact as evidence.
+   Our weak prior: (b) is more likely (60%), because the cause/agent information is spread over the earlier clause.
+DS-P4. If D rises anywhere, it rises at later layers (>= 12), not at layers 0-6.

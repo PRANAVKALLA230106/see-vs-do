@@ -1,0 +1,19 @@
+Jackfruit: predictions for DS2 (robustness of the late "intervention" signal), Qwen3-4B-Base and Llama-3.2-3B
+Written 2026-11-12 ~09:00 IST, BEFORE the run. Items: chain variants 0-15 of the valid scenarios (never used for patching before).
+Layers: Qwen 0, 6, 9, 12-17; Llama 0, 3, 5-9 (the last ~4 layers before patches fail are "late").
+
+Forward patch (target = neutral base story, source = fact word from the see or the do story):
+DS2-P1. Single-layer word patch: at early/middle layers (Qwen 0-12, Llama 0-5) the paired difference D(do source) - D(see source)
+        has a 95% CI that includes 0 or lies within [-0.1, 0.1].
+DS2-P2. At the late layers (Qwen 14-17, Llama 7-9) the paired difference is positive, median >= 0.1, with 95% CI above 0
+        in at least half of the late layers, for both models. (Replicates the exploratory finding.)
+DS2-P3. Column patch (word replaced at every layer 0..L): same direction as P1/P2; the late difference is at least as large
+        as for the single-layer patch at the same L. No prediction on D reaching 1; we expect it stays below 0.6.
+
+Reverse patch (target = the do story, source = fact word from the see story, single layer and column):
+DS2-P4. At early/middle layers the patched do story stays do-like: median D >= 0.7 (the "why" lives at the cause clause,
+        so replacing the fact word does not turn the do story into seeing).
+DS2-P5. At late layers D of the reverse patch is lower than at early layers (median drop >= 0.1), mirroring P2.
+
+Interpretation fixed in advance: P1+P2+P4 together = "how the fact came about is held at the cause words, and attaches to
+the fact's position only late and weakly". P2 failing = the exploratory late signal does not replicate and is reported as such.
