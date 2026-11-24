@@ -1,5 +1,5 @@
 """
-Jackfruit dataset generator: chain, fork and collider stories.
+Dataset generator: chain, fork and collider stories.
 
 Run:  python make_dataset.py        -> writes stories_chain.csv, stories_fork.csv, stories_collider.csv
 

@@ -1,6 +1,6 @@
 # Doing or Seeing? Activation patching makes language models infer the cause of the patched fact
 
-**Pranav Kalla, Pranav Prabhakar**. This was our Advanced Data Analytics (Jackfruit) project at PES University, Bengaluru.
+**Pranav Kalla, Pranav Prabhakar**. PES University, Bengaluru.
 
 Researchers edit LLM hidden states (activation patching) and call it a causal intervention, Pearl's *do()*. We test whether the model agrees.
 
@@ -8,7 +8,7 @@ We used 79 causal scenarios (1,896 stories), three structures (chains, colliders
 
 A second, pre-registered finding concerns where the knowledge that a fact was *imposed* is held. It sits at the **cause words**, and reaches the fact's own position only late in the network and only partly.
 
-📄 [Paper](paper/Kalla_Prabhakar_ActivationPatching_SeeingVsDoing.pdf) ([earlier course version](paper/v1_course_report/GroundTruth_IEEE_Report_v1.pdf)) · 📊 [Slides](slides/GroundTruth_Jackfruit_Final.pdf) · 🗂 [Dataset card](data/README.md)
+📄 [Paper](paper/Kalla_Prabhakar_ActivationPatching_SeeingVsDoing.pdf) · 🗂 [Dataset card](data/README.md)
 
 ![Seeing, doing and patching](figures/fig_schematic.png)
 
@@ -33,7 +33,7 @@ A second, pre-registered finding concerns where the knowledge that a fact was *i
 | `results/` | Every CSV each experiment wrote. |
 | `figures/`, `figures_code/` | The paper figures (PNG + PDF) and the scripts that make them. |
 | `pre_registrations/` | Predictions written down before each confirmatory run. |
-| `paper/`, `slides/` | The current paper (PDF), the earlier course report in `paper/v1_course_report/` (PDF + LaTeX), the one-pager and the slides. |
+| `paper/` | The paper (PDF). |
 
 ## Quick start
 
@@ -69,7 +69,7 @@ jupyter nbconvert --execute --to notebook --inplace notebooks/00_results_and_fig
    - Runtime: about 1–4 h each; DS2 Qwen took about 3 h.
 2. **Colab (notebooks 01–08).**
    - Use a T4 GPU.
-   - The notebooks read the CSVs from `My Drive/jackfruit/` and write to `My Drive/jackfruit/results/`.
+   - The notebooks read the CSVs from `My Drive/see-vs-do/` and write to `My Drive/see-vs-do/results/`.
 3. **Precision.**
    - Qwen and Llama use fp16 weights with an fp32 output layer.
    - Gemma uses bf16 with eager attention and logit soft-cap 30.
@@ -100,7 +100,6 @@ jupyter nbconvert --execute --to notebook --inplace notebooks/00_results_and_fig
   title  = {When We Edit an AI's Thoughts, Is It Doing or Seeing? Activation Patching Makes Language Models Infer the Cause of the Patched Fact},
   author = {Kalla, Pranav and Prabhakar, Pranav},
   year   = {2026},
-  note   = {Advanced Data Analytics course project, PES University},
   url    = {https://github.com/PRANAVKALLA230106/see-vs-do}
 }
 ```
