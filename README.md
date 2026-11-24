@@ -8,7 +8,7 @@ We used 79 causal scenarios (1,896 stories), three structures (chains, colliders
 
 A second, pre-registered finding concerns where the knowledge that a fact was *imposed* is held. It sits at the **cause words**, and reaches the fact's own position only late in the network and only partly.
 
-📄 [Paper (IEEE format)](paper/GroundTruth_IEEE_Report.pdf) · 📊 [Slides](slides/GroundTruth_Jackfruit_Final.pdf) · 🗂 [Dataset card](data/README.md)
+📄 [Paper (IEEE format)](paper/Kalla_Prabhakar_ActivationPatching_SeeingVsDoing.pdf) · 📊 [Slides](slides/GroundTruth_Jackfruit_Final.pdf) · 🗂 [Dataset card](data/README.md)
 
 ![Seeing, doing and patching](figures/fig_schematic.png)
 
