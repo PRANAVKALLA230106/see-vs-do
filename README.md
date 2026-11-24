@@ -8,7 +8,7 @@ We used 79 causal scenarios (1,896 stories), three structures (chains, colliders
 
 A second, pre-registered finding concerns where the knowledge that a fact was *imposed* is held. It sits at the **cause words**, and reaches the fact's own position only late in the network and only partly.
 
-📄 [Paper (IEEE format)](paper/Kalla_Prabhakar_ActivationPatching_SeeingVsDoing.pdf) · 📊 [Slides](slides/GroundTruth_Jackfruit_Final.pdf) · 🗂 [Dataset card](data/README.md)
+📄 [Paper](paper/Kalla_Prabhakar_ActivationPatching_SeeingVsDoing.pdf) ([earlier course version](paper/v1_course_report/GroundTruth_IEEE_Report_v1.pdf)) · 📊 [Slides](slides/GroundTruth_Jackfruit_Final.pdf) · 🗂 [Dataset card](data/README.md)
 
 ![Seeing, doing and patching](figures/fig_schematic.png)
 
@@ -33,7 +33,7 @@ A second, pre-registered finding concerns where the knowledge that a fact was *i
 | `results/` | Every CSV each experiment wrote. |
 | `figures/`, `figures_code/` | The paper figures (PNG + PDF) and the scripts that make them. |
 | `pre_registrations/` | Predictions written down before each confirmatory run. |
-| `paper/`, `slides/` | The paper (PDF), the one-pager and the slides. |
+| `paper/`, `slides/` | The current paper (PDF), the earlier course report in `paper/v1_course_report/` (PDF + LaTeX), the one-pager and the slides. |
 
 ## Quick start
 
