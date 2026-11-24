@@ -33,7 +33,7 @@ A second, pre-registered finding concerns where the knowledge that a fact was *i
 | `results/` | Every CSV each experiment wrote. |
 | `figures/`, `figures_code/` | The paper figures (PNG + PDF) and the scripts that make them. |
 | `pre_registrations/` | Predictions written down before each confirmatory run. |
-| `paper/`, `slides/` | The report (PDF + LaTeX), the one-pager and the slides. |
+| `paper/`, `slides/` | The paper (PDF), the one-pager and the slides. |
 
 ## Quick start
 
