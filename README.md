@@ -1,6 +1,6 @@
 # Doing or Seeing? Activation patching makes language models infer the cause of the patched fact
 
-**Pranav Kalla, Pranav Prabhakar**. PES University, Bengaluru.
+**Pranav Kalla,Pranav Prabhakar**. PES University, Bengaluru.
 
 Researchers edit LLM hidden states (activation patching) and call it a causal intervention, Pearl's *do()*. We test whether the model agrees.
 
